@@ -1,12 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+//React入口文件
+import React from 'react'; //引入React,帮我们理解特有的语法和写作规则
+import ReactDOM from 'react-dom';//帮我们把一个组件渲染到一个dom节点上
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// App组件，大写字母开头
+import TodoList from './TodoList';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
+ReactDOM.render(<TodoList />, document.getElementById('root'));
+
+
